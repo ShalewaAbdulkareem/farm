@@ -120,7 +120,7 @@
             <p>From the early hours of the morning to the last light of the day, our team works tirelessly to care for the farm and the animals. We believe in transparency, ethical farming practices, and delivering fresh, farm-to-table products to homes and markets across the country.</p>
             <p>More than just a farm, Petrosa is a vision a commitment to nourishing lives, empowering communities, and building a future where agriculture thrives. Whether you're looking for fresh produce, quality meat, or a trusted farming partner, you can count on us.</p>
 
-            <a href="#" class="btn famie-btn mt-30">Read More</a>
+            <a href="{% url 'farms_app:about' %}" class="btn famie-btn mt-30">Read More</a>
           </div>
         </div>
 
@@ -327,14 +327,14 @@
             <div class="product-thumbnail">
               <img src="{% static 'img/bg-img/p4.jpg' %}" alt="">
               <!-- Product Tags -->
-              <span class="product-tags bg-danger">Sale</span>
+              <!-- <span class="product-tags bg-danger">Sale</span> -->
               <!-- Product Meta Data -->
-              <div class="product-meta-data">
+              <!-- <div class="product-meta-data">
                 <a href="#" data-toggle="tooltip" data-placement="top" title="Favourite"><i class="icon_heart_alt"></i></a>
                 <a href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="icon_cart_alt"></i></a>
                 <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="arrow_left-right_alt"></i></a>
               </div>
-            </div>
+            </div> -->
             <!-- Product Description -->
             <div class="product-desc text-center pt-4">
               <a href="#" class="product-title">Pure Honey</a>
@@ -447,7 +447,7 @@
           <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="300ms">
             <!-- Thumbnail -->
             <div class="farming-practice-thumbnail">
-              <img src="{% static 'img/bg-img/11.jpg' %}" alt="">
+              <img src="{% static 'img/farm/cattle.png' %}" alt="">
             </div>
             <!-- Content -->
             <div class="farming-practice-content text-center">

@@ -71,9 +71,10 @@
                 <ul>
                   <li class="active"><a href="{% url 'farms_app:index' %}">Home</a></li>
                   <li><a href="{% url 'farms_app:about' %}" class="{% if current_page == 'about' %}active{% endif %}">About</a></li>
-                  <li><a href="{% url 'farms_app:our-product' %}">Our Product</a></li>
+                  <li><a href="{% url 'farms_app:our-product' %}" class="{% if current_page == 'our-product' %}active{% endif %}">Our Product</a></li>
+                  <li><a href="{% url 'farms_app:services' %}">Services</a></li>
                   <!-- <li><a href="farming-practice.html">Farming Practice</a></li> -->
-                  <li><a href="news.html">News</a></li>
+                  <!-- <li><a href="news.html">News</a></li> -->
                   <li><a href="{% url 'farms_app:contact' %}">Contact</a></li> 
                 </ul>
                 <!-- Search Icon -->

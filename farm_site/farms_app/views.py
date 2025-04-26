@@ -18,3 +18,6 @@ def our_product(request):
 
 def shop(request):
     return render(request, 'shop.html')
+
+def services(request):
+    return render(request, 'services.html')

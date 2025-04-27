@@ -1850,3 +1850,115 @@ textarea.form-control {
   height: 100px; }
 
 /*# sourceMappingURL=style.css.map */
+.accordion-hero{
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+.accordion-hero ul{
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion-hero .acc1, .acc2, .acc3, .acc4, .acc5{
+  background-image: url(img/bg-img/1.jpg);
+  width: 30%;
+  height: 450px;
+  background-size: cover;
+  display: table-cell;
+  vertical-align: bottom;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center center;
+  transition: all 500ms ease;
+  
+}
+.accordion-hero .acc2{
+  background-image: url(img/farm/homepage1.jpg);
+}
+.accordion-hero .acc3{
+  background-image: url(img/farm/cattle.png);
+}
+.accordion-hero .acc4{
+  background-image: url(img/farm/homepage3.jpg);
+}
+.accordion-hero .acc5{
+  background-image: url(img/farm/fresh.png);
+}
+
+.accordion-body{
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.accordion-body a{
+  display: block;
+  height: 450px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  color: white;
+  /* vertical-align: bottom; */
+  padding: 15px 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 200ms ease;
+
+}
+
+li .accordion-body a *{
+  width: 100%;
+  margin: 0;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateX(-20px);
+  transition: all 400ms ease;
+}
+
+.accordion-body a h2{
+  text-transform: uppercase;
+  text-overflow: clip;
+  margin-bottom: 2px;
+  font-size: 30px;
+  top: 260px;
+
+}
+
+.accordion-body a p{
+  top: 260px;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+}
+
+.accordion-body a *{
+  opacity: 0;
+}
+
+.accordion-hero ul:hover li{
+  width: 10%;
+}
+
+.accordion-hero ul:hover li:hover{
+  width: 80%;
+}
+
+.accordion-hero ul:hover li:hover a{
+  background-color: rgba(0, 0, 0, 0.55);
+  
+}
+
+.accordion-hero li:hover a *{
+  opacity: 1;
+  transform: translateX(0);
+
+}

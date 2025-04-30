@@ -1962,3 +1962,7 @@ li .accordion-body a *{
   transform: translateX(0);
 
 }
+
+.accordion-body h5, p{
+  color: white;
+}

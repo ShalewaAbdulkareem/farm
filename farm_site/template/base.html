@@ -14,6 +14,7 @@
     {% endblock title %}
   </title>
   <!-- Favicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" href="{% static 'img/core-img/favicon.icon' %}">
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="{% static 'style.css' %}">
@@ -35,7 +36,7 @@
             <div class="top-header-content d-flex align-items-center justify-content-between">
               <!-- Top Header Content -->
               <div class="top-header-meta">
-                <p>Welcome to <span>Farm</span>, we hope you will enjoy our products and have good experience</p>
+                <p><span> Welcome to Petrosa Farm , we hope you will enjoy our products and have good experience</span></p>
               </div>
               <!-- Top Header Content -->
               <div class="top-header-meta text-right">
@@ -125,7 +126,7 @@
           <div class="col-12 col-sm-6 col-lg-6">
             <div class="footer-widget mb-80">
               <!-- <a href="#" class="foo-logo d-block mb-30"><img src="{% static 'img/core-img/logo2.png' %}" alt=""></a> -->
-              <p>Lorem ipsum dolor sit amet, consecte stare adipiscing elit. In act honcus risus atiner Pellentesque risus.</p>
+              <p>Petrosa Farms is dedicated to providing high-quality agricultural products through sustainable and innovative farming practices. We grow fresh, healthy, and responsibly farmed produce for communities across Nigeria.</p>
               <div class="contact-info">
                 <p><i class="fa fa-map-pin" aria-hidden="true"></i><span>12 Raymond Rd, Lagos State</span></p>
                 <p><i class="fa fa-envelope" aria-hidden="true"></i><span>info.farm@gmail.com</span></p>
@@ -141,18 +142,18 @@
               <!-- Footer Widget Nav -->
               <nav class="footer-widget-nav">
                 <ul>
-                  <li><a href="#">Purchase</a></li>
-                  <li><a href="#">Policities</a></li>
-                  <li><a href="#">Shipping</a></li>
-                  <li><a href="#">FAQs</a></li>
-                  <li><a href="#">Return</a></li>
+                  <li><a href="{% url 'farms_app:index' %}">Home</a></li>
+                  <li><a href="{% url 'farms_app:about' %}">About</a></li>
+                  <li><a href="{% url 'farms_app:services' %}">Services</a></li>
+                  <li><a href="{% url 'farms_app:contact' %}">Contact</a></li>
+                  <!-- <li><a href="#">Return</a></li>
                   <li><a href="#">Careers</a></li>
                   <li><a href="#">Payments</a></li>
                   <li><a href="#">Partners</a></li>
                   <li><a href="#">Guide</a></li>
                   <li><a href="#">Standard</a></li>
                   <li><a href="#">News</a></li>
-                  <li><a href="#">Brands</a></li>
+                  <li><a href="#">Brands</a></li> -->
                 </ul>
               </nav>
             </div>
@@ -192,11 +193,11 @@
           <div class="row align-items-center">
             <div class="col-md-6">
               <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Shalewa</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> &copy; Petrosa Farms. All Rights Reserved.<i class="fa fa-heart-o" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </p>
             </div>
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
               <div class="footer-nav">
                 <nav>
                   <ul>
@@ -213,7 +214,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </footer>
   <!-- ##### Footer Area End ##### -->
 

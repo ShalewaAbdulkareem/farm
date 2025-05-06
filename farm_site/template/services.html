@@ -9,6 +9,40 @@
 {% block content %}
 
 
+<style>
+  .service-box {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border-left: 5px solid #77b122;;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+  }
+
+  .service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-icon {
+    font-size: 35px;
+    color: #77b122;
+    margin-bottom: 15px;
+  }
+
+  .service-box h3 {
+    font-size: 20px;
+    color: #77b122;
+    margin-bottom: 10px;
+  }
+
+  .service-box p {
+    font-size: 15px;
+    color: #555;
+  }
+</style>
+
+
  <!-- ##### Breadcrumb Area Start ##### -->
  <div class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url({% static 'img/farm/service.png' %});">
     <div class="container h-100">
@@ -76,6 +110,7 @@
                     </a>
                 </div>
             </li>
+            
         </ul>
     </div>
 </section>
@@ -88,7 +123,7 @@
         <div class="text-center wow fadeInUp" data-wow-delay="700ms">
           <h2 class="text-uppercase text-white">Download App</h2>
           <p class="text-white">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam optio eaque est tenetur. Consectetur nam totam ut, quibusdam tempora incidunt assumenda! Consectetur, numquam maxime hic explicabo ipsam itaque necessitatibus! Itaque!
+            Stay connected with Petrosa Farms anywhere you go. Our mobile app gives you instant access to fresh farm produce, real-time updates, and seamless ordering — all at your fingertips. Experience convenience, transparency, and reliability like never before.
           </p>
   
           <div class="d-flex justify-content-center mt-4 gap-4">
@@ -114,4 +149,67 @@
     </div>
   </div>
 
+
+
+
+  <section style="padding: 60px 20px; background-color: #f9f9f9; font-family: Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: auto;">
+      <h2 style="text-align: center; color: #77b122;; font-size: 32px; margin-bottom: 40px;">Our Services</h2>
+  
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+  
+        <!-- Service Item -->
+        <div class="service-box">
+          <i class="fas fa-seedling service-icon"></i>
+          <h3>Farming & Livestock</h3>
+          <p>We grow crops like maize, rice, and tomatoes, and raise animals such as poultry, fish, and cattle to support food security.</p>
+        </div>
+  
+        <div class="service-box">
+          <i class="fas fa-industry service-icon"></i>
+          <h3>Food Processing</h3>
+          <p>We transform raw farm produce into finished products like garri, flour, palm oil, and frozen meat, adding value to local harvests.</p>
+        </div>
+  
+        <div class="service-box">
+          <i class="fas fa-store service-icon"></i>
+          <h3>Sales & Distribution</h3>
+          <p>We buy and sell agricultural goods, tools, fertilizers, and equipment serving both local and international markets.</p>
+        </div>
+  
+        <div class="service-box">
+          <i class="fas fa-chalkboard-teacher service-icon"></i>
+          <h3>Training & Consulting</h3>
+          <p>We provide expert training and guidance to farmers and agribusinesses on best practices and sustainable agriculture.</p>
+        </div>
+  
+        <div class="service-box">
+          <i class="fas fa-warehouse service-icon"></i>
+          <h3>Storage & Logistics</h3>
+          <p>We build and manage silos, cold rooms, and logistics systems to store and deliver farm products efficiently.</p>
+        </div>
+  
+        <div class="service-box">
+          <i class="fas fa-robot service-icon"></i>
+          <h3>Smart Farming (AgriTech)</h3>
+          <p>We use drones, sensors, AI, and mobile apps to monitor crops, boost productivity, and automate agricultural processes.</p>
+        </div>
+  
+        <div class="service-box">
+          <i class="fas fa-tractor service-icon"></i>
+          <h3>Farm Tourism</h3>
+          <p>We create farm-based resorts and experiences where visitors can relax, learn about agriculture, and enjoy rural life.</p>
+        </div>
+  
+        <div class="service-box">
+          <i class="fas fa-hands-helping service-icon"></i>
+          <h3>Support Services</h3>
+          <p>We raise funding, build partnerships, and work with governments and research bodies to drive agricultural innovation.</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  
 {% endblock %}

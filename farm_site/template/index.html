@@ -8,6 +8,39 @@
 
 {% block content %}
 
+
+<style>
+  .service-box {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border-left: 5px solid #77b122;;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+  }
+
+  .service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-icon {
+    font-size: 35px;
+    color: #77b122;
+    margin-bottom: 15px;
+  }
+
+  .service-box h3 {
+    font-size: 20px;
+    color: #77b122;
+    margin-bottom: 10px;
+  }
+
+  .service-box p {
+    font-size: 15px;
+    color:black;
+  }
+</style>
   <!-- ##### Hero Area Start ##### -->
   <div class="hero-area">
     <div class="welcome-slides owl-carousel">
@@ -18,7 +51,7 @@
           <div class="row h-100 align-items-center">
             <div class="col-12 col-lg-10">
               <div class="welcome-content">
-                <h2 data-animation="fadeInUp" data-delay="200ms">Growing Nature’s Best, From Our Farm to Your Table</h2>
+                <h2 data-animation="fadeInUp" data-delay="200ms">Growing Nature's Best, From Our Farm to Your Table</h2>
                 <p data-animation="fadeInUp" data-delay="400ms">At Petrosa Farms, we cultivate with care and commitment, delivering fresh, organic produce that nurtures your health and supports sustainable living. Experience the goodness of nature in every harvest.</p>
                 <a href="#" class="btn famie-btn mt-4" data-animation="bounceInUp" data-delay="600ms">Contact Us</a>
               </div>
@@ -136,107 +169,66 @@
   </section>
   <!-- ##### About Us Area End ##### -->
 
-  <!-- ##### Services Area Start ##### -->
-  <section class="services-area d-flex flex-wrap">
-    <!-- Service Thumbnail -->
-    <div class="services-thumbnail bg-img jarallax" style="background-image: url({% static 'img/farm/what.png' %});"></div>
-
-    <!-- Service Content -->
-    <div class="services-content section-padding-100-50 px-5">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <!-- Section Heading -->
-            <div class="section-heading">
-              <p class="text-dark">What we do</p>
-              <h2><span>Fresh From</span> Our Field To Your Home</h2>
-              <img src="{% static 'img/core-img/decor.png' %}" alt="">
-            </div>
-          </div>
+  <section style="padding: 60px 20px; background-color: #f9f9f9; font-family: Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: auto;">
+      <h2 style="text-align: center; color: #77b122;; font-size: 32px; margin-bottom: 40px;">What We Do</h2>
+  
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+  
+        <!-- Service Item -->
+        <div class="service-box">
+          <i class="fas fa-seedling service-icon"></i>
+          <h3>Farming & Livestock</h3>
+          <p>We grow crops like maize, rice, and tomatoes, and raise animals such as poultry, fish, and cattle to support food security.</p>
         </div>
-
-        <div class="row">
-          <div class="col-12 mb-50">
-            <p class="text-dark"> At Farm, we proudly grow a wide range of crops and raise livestock with care and attention to quality. From fresh fruits and vegetables to premium meats, eggs, and dairy, we provide locally-sourced, sustainably farmed products to nourish your family. Our goal is to bring the finest farm produce straight to your table while supporting environmentally friendly practices.
-            </p>
-          </div>
-
-          <!-- Single Service Area -->
-          <div class="col-12 col-lg-6">
-            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="100ms">
-              <!-- Service Title -->
-              <div class="service-title mb-3 d-flex align-items-center">
-                <img src="{% static 'img/core-img/s1.png' %}" alt="">
-                <h5>Fresh Fruit &amp; Vegetables</h5>
-              </div>
-              <p class="text-dark">We grow a variety of seasonal fruits and vegetables, including tomatoes, peppers, cucumbers, and leafy greens. Our produce is harvested at the peak of freshness and packed with nutrients, perfect for every meal.</p>
-            </div>
-          </div>
-
-          <!-- Single Service Area -->
-          <div class="col-12 col-lg-6">
-            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="300ms">
-              <!-- Service Title -->
-              <div class="service-title mb-3 d-flex align-items-center">
-                <img src="{% static 'img/core-img/s2.png' %}" alt="">
-                <h5>Meat &amp; Eggs</h5>
-              </div>
-              <p class="text-dark">Our livestock is raised with care and respect, providing high-quality meat and fresh eggs. From free-range chicken to tender cuts of beef, we offer protein-rich options for your family’s nutrition.</p>
-            </div>
-          </div>
-
-          <!-- Single Service Area -->
-          <div class="col-12 col-lg-6">
-            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="500ms">
-              <!-- Service Title -->
-              <div class="service-title mb-3 d-flex align-items-center">
-                <img src="{% static 'img/core-img/s3.png' %}" alt="">
-                <h5>Milk &amp; Cheese</h5>
-              </div>
-              <p class="text-dark">Our dairy products are a staple in many homes. Fresh milk, creamy cheese, and yogurt are made from cows raised on our farm, ensuring that you get the best in taste and quality.</p>
-            </div>
-          </div>
-
-          <!-- Single Service Area -->
-          <div class="col-12 col-lg-6">
-            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="700ms">
-              <!-- Service Title -->
-              <div class="service-title mb-3 d-flex align-items-center">
-                <img src="{% static 'img/core-img/s4.png' %}" alt="">
-                <h5>Rice &amp; Corn</h5>
-              </div>
-              <p class="text-dark">We cultivate staple crops like rice and corn, which are carefully harvested and processed. Our grains are a perfect addition to your meals, offering quality and flavor you can rely on. </p>
-            </div>
-          </div>
-
-          <!-- Single Service Area -->
-        <!-- <div class="col-12 col-lg-6">
-          <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="900ms"> -->
-            <!-- Service Title -->
-            <!-- <div class="service-title mb-3 d-flex align-items-center">
-              <img src="{% static 'img/core-img/s5.png' %}" alt="">
-              <h5>Fresh Fish &amp; Seafood</h5>
-            </div>
-            <p>We also offer fresh fish and seafood caught responsibly, providing healthy, protein-rich options for your meals. From farm-raised fish to a variety of shellfish, we ensure you get the best, freshest catch.</p>
-          </div> -->
-        <!-- </div> -->
-        <!-- Single Service Area -->
-      <!-- <div class="col-12 col-lg-6">
-        <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="1500ms"> -->
-        <!-- Service Title -->
-          <!-- <div class="service-title mb-3 d-flex align-items-center">
-            <img src="{% static 'img/core-img/s9.png' %}" alt="">
-            <h5>Healthy Livestock &amp; Poultry</h5>
-          </div>
-          <p>We raise healthy livestock and poultry, including free-range chickens, goats, and cows. Our animals are treated with care, fed a nutritious diet, and raised in a stress-free environment. We provide high-quality meat, milk, and eggs that are rich in nutrients and taste.</p>
+  
+        <div class="service-box">
+          <i class="fas fa-industry service-icon"></i>
+          <h3>Food Processing</h3>
+          <p>We transform raw farm produce into finished products like garri, flour, palm oil, and frozen meat, adding value to local harvests.</p>
         </div>
-      </div> -->
-
-
+  
+        <div class="service-box">
+          <i class="fas fa-store service-icon"></i>
+          <h3>Sales & Distribution</h3>
+          <p>We buy and sell agricultural goods, tools, fertilizers, and equipment serving both local and international markets.</p>
         </div>
+  
+        <div class="service-box">
+          <i class="fas fa-chalkboard-teacher service-icon"></i>
+          <h3>Training & Consulting</h3>
+          <p>We provide expert training and guidance to farmers and agribusinesses on best practices and sustainable agriculture.</p>
+        </div>
+  
+        <div class="service-box">
+          <i class="fas fa-warehouse service-icon"></i>
+          <h3>Storage & Logistics</h3>
+          <p>We build and manage silos, cold rooms, and logistics systems to store and deliver farm products efficiently.</p>
+        </div>
+  
+        <div class="service-box">
+          <i class="fas fa-robot service-icon"></i>
+          <h3>Smart Farming (AgriTech)</h3>
+          <p>We use drones, sensors, AI, and mobile apps to monitor crops, boost productivity, and automate agricultural processes.</p>
+        </div>
+  
+        <div class="service-box">
+          <i class="fas fa-tractor service-icon"></i>
+          <h3>Farm Tourism</h3>
+          <p>We create farm-based resorts and experiences where visitors can relax, learn about agriculture, and enjoy rural life.</p>
+        </div>
+  
+        <div class="service-box">
+          <i class="fas fa-hands-helping service-icon"></i>
+          <h3>Support Services</h3>
+          <p>We raise funding, build partnerships, and work with governments and organizations to strengthen the agricultural ecosystem and empower local farmers.</p>
+        </div>
+  
       </div>
     </div>
-  </section>
+  </section>  
+
+   
   <!-- ##### Services Area End ##### -->
 
   <!-- ##### Our Products Area Start ##### -->
@@ -261,14 +253,6 @@
             <!-- Product Thumbnail -->
             <div class="product-thumbnail">
               <img src="{% static 'img/farm/turkey.jpg' %}" alt="">
-              <!-- Product Tags -->
-              <!-- <span class="product-tags">Hot</span> -->
-              <!-- Product Meta Data -->
-              <!-- <div class="product-meta-data">
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Favourite"><i class="icon_heart_alt"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="icon_cart_alt"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="arrow_left-right_alt"></i></a>
-              </div> -->
             </div>
             <!-- Product Description -->
             <div class="product-desc text-center pt-4">
@@ -284,12 +268,6 @@
             <!-- Product Thumbnail -->
             <div class="product-thumbnail">
               <img src="{% static 'img/farm/meat.png' %}" alt="">
-              <!-- Product Meta Data -->
-              <!-- <div class="product-meta-data">
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Favourite"><i class="icon_heart_alt"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="icon_cart_alt"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="arrow_left-right_alt"></i></a>
-              </div> -->
             </div>
             <!-- Product Description -->
             <div class="product-desc text-center pt-4">
@@ -305,12 +283,6 @@
             <!-- Product Thumbnail -->
             <div class="product-thumbnail">
               <img src="{% static 'img/farm/balls.png' %}" alt="">
-              <!-- Product Meta Data -->
-              <!-- <div class="product-meta-data">
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Favourite"><i class="icon_heart_alt"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="icon_cart_alt"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="arrow_left-right_alt"></i></a>
-              </div> -->
             </div>
             <!-- Product Description -->
             <div class="product-desc text-center pt-4">
@@ -326,15 +298,6 @@
             <!-- Product Thumbnail -->
             <div class="product-thumbnail">
               <img src="{% static 'img/farm/tilapia.png' %}" alt="">
-              <!-- Product Tags -->
-              <!-- <span class="product-tags bg-danger">Sale</span> -->
-              <!-- Product Meta Data -->
-              <!-- <div class="product-meta-data">
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Favourite"><i class="icon_heart_alt"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="icon_cart_alt"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="arrow_left-right_alt"></i></a>
-              </div>
-            </div> -->
             <!-- Product Description -->
             <div class="product-desc text-center pt-4">
               <a href="#" class="product-title">Tilapia Fish</a>
@@ -344,46 +307,34 @@
         </div>
 
       </div>
-
-      <!-- <div class="row">
-        <div class="col-12">
-          <div class="gotoshop-btn text-center wow fadeInUp" data-wow-delay="900ms">
-            <a href="shop.html" class="btn famie-btn">Download our app from Playstore</a>
-          </div>
-        </div>
-      </div> -->
-    </div>
-  </section>
   <!-- ##### Our Products Area End ##### -->
 
-  <!-- ##### Newsletter Area Start ##### -->
-  <section class="newsletter-area section-padding-100 bg-img bg-overlay jarallax" style="background-image: url({% static 'img/farm/section.png' %});">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-10">
-          <div class="newsletter-content">
-            <!-- Section Heading -->
-            <div class="section-heading white text-center">
-              <p>What we do</p>
-              <h2><span>Fresh From</span> Our Field To Your Home</h2>
-              <img src="{% static 'img/core-img/decor2.png' %}" alt="">
-            </div>
-            <p class="text-white mb-50 text-center"> At our farm, we grow and deliver the finest selection of fresh, organic produce — straight from the fields to your table. We are passionate about healthy living, sustainability, and providing natural products you can trust. Join our farm family and experience the true taste of nature.</p>
-          </div>
+  <!-- Farmer Integration Section -->
+<section class="farmer-integration-area section-padding-100-0" style="background-color: #f0f9f1;width: 100%;">
+  <div class="container-fluid px-5">
+    <div class="row align-items-center">
+      <!-- Text Content -->
+      <div class="col-12 col-md-6">
+        <div class="section-heading">
+          <p class="text-success">Community Empowerment</p>
+          <h2><span>Farmer</span> Integration & Marketplace</h2>
+          <img src="{% static 'img/core-img/decor.png' %}" alt="">
         </div>
+        <p class="text-dark">At Petrosa Agrotech Farms, our mission goes beyond farming we're developing a platform to empower local farmers and ensure reliable access to high-quality produce. Through our digital platform, farmers can share real-time updates on their harvests, giving us a clear view of what's available across the network. We verify and approve every product before it reaches our customers, maintaining our promise of freshness, quality, and transparency.</p>
+        <p class="text-dark">Whether grown on our farms or sourced from trusted partners, every product listed is backed by Petrosa's commitment to excellence. We manage the entire distribution and delivery process, ensuring that only the best produce reaches wholesalers and end users. This model not only supports small-scale farmers and reduces waste but also bridges the gap between production and purchase from farm to table while strengthening our agricultural ecosystem.</p>
+        <!-- <a href="" class="btn btn-success mt-4">Join as a Partner Farmer</a> -->
+
       </div>
-      <!-- Newsletter Form -->
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-6">
-          <form action="#" method="post">
-            <input type="text" class="form-control" placeholder="Enter your email">
-            <button type="submit" class="btn famie-btn">Subscribe</button>
-          </form>
+
+      <!-- Image -->
+      <div class="col-12 col-md-6">
+        <div class="integration-img text-center wow fadeInUp" data-wow-delay="300ms">
+          <img src="{% static 'img/farm/farmers.png' %}" alt="Farmers Marketplace" class="img-fluid">
         </div>
       </div>
     </div>
-  </section>
-  <!-- ##### Newsletter Area End ##### -->
+  </div>
+</section>
 
   <!-- ##### Farming Practice Area Start ##### -->
   <section class="farming-practice-area section-padding-100-50">
@@ -393,7 +344,7 @@
           <!-- Section Heading -->
           <div class="section-heading text-center">
             <p>Make the green world</p>
-            <h2><span>Farming Practices</span> To Preserve Land & Water</h2>
+            <h2><span>Farming</span> Overview</h2>
             <img src="{% static 'img/core-img/decor2.png' %}" alt="">
           </div>
         </div>
@@ -406,7 +357,7 @@
           <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="100ms">
             <!-- Thumbnail -->
             <div class="farming-practice-thumbnail">
-              <img src="{% static 'img/farm/homepage2.png' %}" alt="">
+              <img src="{% static 'img/farm/chickenp.png' %}" alt="">
             </div>
             <!-- Content -->
             <div class="farming-practice-content text-center">
@@ -416,7 +367,7 @@
               </div>
               <span>Farming practice for</span>
               <h4>Poultry Meat Production</h4>
-              <p>Our poultry farming methods prioritize animal health, hygienic environments, and high-quality feed to ensure nutritious and safe chicken meat for our consumers.</p>            </div>
+              <p class="text-dark">Our poultry farming methods prioritize animal health, hygienic environments, and high-quality feed to ensure nutritious and safe chicken meat for our consumers.</p>            </div>
           </div>
         </div>
 
@@ -435,7 +386,7 @@
               </div>
               <span>Farming practice for</span>
               <h4>Pig Farm Management</h4>
-              <p>Our pig farming practices focus on healthy breeding, proper hygiene, and sustainable feeding methods to ensure high-quality pork and responsible livestock management.</p>
+              <p class="text-dark">Our pig farming practices focus on healthy breeding, proper hygiene, and sustainable feeding methods to ensure high-quality pork and responsible livestock management.</p>
             </div>
           </div>
         </div>
@@ -445,7 +396,7 @@
           <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="300ms">
             <!-- Thumbnail -->
             <div class="farming-practice-thumbnail">
-              <img src="{% static 'img/farm/cattle.png' %}" alt="">
+              <img src="{% static 'img/farm/animal.png' %}" alt="">
             </div>
             <!-- Content -->
             <div class="farming-practice-content text-center">
@@ -455,7 +406,7 @@
               </div>
               <span>Farming practice for</span>
               <h4>Beef Cattle Rearing</h4>
-              <p>We rear healthy, grass-fed cattle using best practices in animal care, nutrition, and sustainable grazing to produce premium-quality beef for our consumers.</p>
+              <p class="text-dark">We rear healthy, grass-fed cattle using best practices in animal care, nutrition, and sustainable grazing to produce premium-quality beef for our consumers.</p>
             </div>
           </div>
         </div>
@@ -475,7 +426,7 @@
               </div>
               <span>Farming practice for</span>
               <h4>Modern Rice Cultivation</h4>
-              <p>Our rice farming methods integrate improved seed varieties, efficient irrigation, and eco-friendly practices to deliver high yields and premium-quality grains.</p>
+              <p class="text-dark">Our rice farming methods integrate improved seed varieties, efficient irrigation, and eco-friendly practices to deliver high yields and premium-quality grains.</p>
             </div>
           </div>
         </div>
@@ -495,7 +446,7 @@
               </div>
               <span>Farming practice for</span>
               <h4>Maize Cultivation</h4>
-              <p>We implement modern maize farming techniques that promote healthy growth, increase yield, and protect the soil. Our practices ensure quality harvests season after season.</p>            </div>
+              <p class="text-dark">We implement modern maize farming techniques that promote healthy growth, increase yield, and protect the soil. Our practices ensure quality harvests season after season.</p>            </div>
           </div>
         </div>
 
@@ -514,7 +465,7 @@
               </div>
               <span>Farming practice for</span>
               <h4>Intensive Pepper Farming</h4>
-              <p>We employ sustainable farming techniques to cultivate high-quality peppers, focusing on soil health, pest control, and optimized irrigation to produce flavorful and vibrant peppers.</p>
+              <p class="text-dark">We employ sustainable farming techniques to cultivate high-quality peppers, focusing on soil health, pest control, and optimized irrigation to produce flavorful and vibrant peppers.</p>
             </div>
           </div>
         </div>
@@ -524,97 +475,6 @@
   </section>
   <!-- ##### Farming Practice Area End ##### -->
 
-  <!-- ##### Testimonial Area Start ##### -->
-  <!-- <section class="testimonial-area bg-img bg-overlay section-padding-100 jarallax" style="background-image: url('img/bg-img/15.jpg');">
-    <div class="container">
-      <div class="row">
-        <div class="col-12"> -->
-          <!-- Testimonial Slides -->
-          <!-- <div class="testimonial-slides owl-carousel"> -->
-
-            <!-- Single Slide -->
-            <!-- <div class="single-slide"> -->
-              <!-- Testimonial Text -->
-              <!-- <div class="testi-text d-flex">
-                <div class="quote-icon">
-                  <img src="{% static 'img/core-img/quote.png' %}" alt="">
-                </div>
-                <h5>"Thank you for your organic products. My children like your products and they use for breakfast. We are loving the pure milk, freshly fruit and of course our staple, Brown Rice Bread. Your Gluten Free breads truly make me feel
-                  lighter and uplifted. It's the only bread I plan to eat for the rest of my life. I will use them for many years."</h5>
-              </div> -->
-              <!-- Testimonial Thumbnail Name -->
-              <!-- <div class="testimonial-thumbnail-name d-flex align-items-center">
-                <div class="testimonial-thumbnail">
-                  <img src="{% static 'img/bg-img/16.jpg' %}" alt="">
-                </div>
-                <div class="testimonial-name">
-                  <h5>Mrs Lara Sullivan</h5>
-                  <h6>Customer</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- ##### Testimonial Area End ##### -->
-
-  <!-- ##### News Area Start ##### -->
-  <!-- <section class="news-area bg-gray section-padding-100-0"> -->
-    <!-- <div class="container"> -->
-      <!-- <div class="row"> -->
-
-        <!-- Featured Post Area -->
-        <!-- <div class="col-12 col-lg-6">
-          <div class="featured-post-area mb-100 wow fadeInUp" data-wow-delay="100ms">
-            <img src="{% static 'img/bg-img/17.jpg' %}" alt=""> -->
-            <!-- Post Content -->
-            <!-- <div class="post-content">
-              <h6>Post on <a href="#">18 Aug 2018</a> / <a href="#">Carlos Bacca</a></h6>
-              <a href="#" class="post-title">Why innovation is key to maintaining our export market share</a>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- Single Blog Area -->
-        <!-- <div class="col-12 col-lg-6 mb-100"> -->
-
-          <!-- Single Blog Area -->
-          <!-- <div class="single-blog-area style-2 wow fadeInUp" data-wow-delay="300ms"> -->
-            <!-- Post Content -->
-            <!-- <div class="post-content"> -->
-              <!-- <h6>Post on <a href="#">18 Aug 2018</a> / <a href="#">Peter Crough</a></h6> -->
-              <!-- <a href="#" class="post-title">Rising cattle supplies see beef export lifted</a> -->
-              <!-- <p>Maecenas facilisis quam orcit, velo porttitor arcu egestas eu. Maecenas donald imperdiet nibh, quis. Etiam non scelerisque exited sagittis...</p> -->
-            <!-- </div> -->
-          <!-- </div> -->
-
-          <!-- Single Blog Area -->
-          <!-- <div class="single-blog-area style-2 wow fadeInUp" data-wow-delay="500ms"> -->
-            <!-- Post Content -->
-            <!-- <div class="post-content"> -->
-              <!-- <h6>Post on <a href="#">18 Aug 2018</a> / <a href="#">Peter Crough</a></h6> -->
-              <!-- <a href="#" class="post-title">Cattle marts: Cows take a hit at the ringside</a> -->
-              <!-- <p>Maecenas facilisis quam orcit, velo porttitor arcu egestas eu. Maecenas donald imperdiet nibh, quis. Etiam non scelerisque exited sagittis...</p> -->
-            <!-- </div> -->
-          <!-- </div> -->
-
-          <!-- Single Blog Area -->
-          <!-- <div class="single-blog-area style-2 wow fadeInUp" data-wow-delay="700ms"> -->
-            <!-- Post Content -->
-            <!-- <div class="post-content">
-              <h6>Post on <a href="#">18 Aug 2018</a> / <a href="#">Peter Crough</a></h6>
-              <a href="#" class="post-title">Malting barley price set to commence</a>
-              <p>Maecenas facilisis quam orcit, velo porttitor arcu egestas eu. Maecenas donald imperdiet nibh, quis. Etiam non scelerisque exited sagittis...</p>
-            </div>
-          </div> -->
-
-        <!-- </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- ##### News Area End ##### -->
   
   <div class="container-fluid mb-3 " style="background-color: #669b17;">
     <div class="row g-2 height d-flex justify-content-center align-items-center">
@@ -623,7 +483,7 @@
         <div class="text-center wow fadeInUp" data-wow-delay="700ms">
           <h2 class="text-uppercase text-white">Download App</h2>
           <p class="text-white">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam optio eaque est tenetur. Consectetur nam totam ut, quibusdam tempora incidunt assumenda! Consectetur, numquam maxime hic explicabo ipsam itaque necessitatibus! Itaque!
+            Stay connected with Petrosa Farms anywhere you go. Our mobile app gives you instant access to fresh farm produce, real-time updates, and seamless ordering all at your fingertips. Experience convenience, transparency, and reliability like never before.
           </p>
   
           <div class="d-flex justify-content-center mt-4 gap-4">

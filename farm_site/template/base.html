@@ -18,6 +18,10 @@
   <link rel="icon" href="{% static 'img/core-img/favicon.icon' %}">
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
 </head>
 
 <body>
@@ -36,12 +40,15 @@
             <div class="top-header-content d-flex align-items-center justify-content-between">
               <!-- Top Header Content -->
               <div class="top-header-meta">
-                <p><span> Welcome to Petrosa Farm , we hope you will enjoy our products and have good experience</span></p>
+                <p><span> Welcome to Petrosa Farm , we hope you will enjoy our products and have good experience</span>
+                </p>
               </div>
               <!-- Top Header Content -->
               <div class="top-header-meta text-right">
-                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: farm@gmail.com</span></a>
-                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +81 223 9000</span></a>
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i
+                    class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: farm@gmail.com</span></a>
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone"
+                    aria-hidden="true"></i> <span>Call Us: +81 223 9000</span></a>
               </div>
             </div>
           </div>
@@ -71,12 +78,14 @@
               <div class="classynav">
                 <ul>
                   <li class="active"><a href="{% url 'farms_app:index' %}">Home</a></li>
-                  <li><a href="{% url 'farms_app:about' %}" class="{% if current_page == 'about' %}active{% endif %}">About</a></li>
-                  <li><a href="{% url 'farms_app:our-product' %}" class="{% if current_page == 'our-product' %}active{% endif %}">Our Product</a></li>
+                  <li><a href="{% url 'farms_app:about' %}"
+                      class="{% if current_page == 'about' %}active{% endif %}">About</a></li>
+                  <li><a href="{% url 'farms_app:our-product' %}"
+                      class="{% if current_page == 'our-product' %}active{% endif %}">Our Product</a></li>
                   <li><a href="{% url 'farms_app:services' %}">Services</a></li>
                   <!-- <li><a href="farming-practice.html">Farming Practice</a></li> -->
                   <!-- <li><a href="news.html">News</a></li> -->
-                  <li><a href="{% url 'farms_app:contact' %}">Contact</a></li> 
+                  <li><a href="{% url 'farms_app:contact' %}">Contact</a></li>
                 </ul>
                 <!-- Search Icon -->
                 <div id="searchIcon">
@@ -90,8 +99,8 @@
                   </a>
                 </div>
               </div> -->
-              <!-- Navbar End -->
-            </div>
+                <!-- Navbar End -->
+              </div>
           </nav>
 
           <!-- Search Form -->
@@ -110,15 +119,17 @@
   <!-- ##### Header Area End ##### -->
 
   {% block content %}
+
+
   {% endblock %}
 
- 
-  
 
-   <!-- ##### Footer Area Start ##### -->
-   <footer class="footer-area">
+
+  <!-- ##### Footer Area Start ##### -->
+  <footer class="footer-area">
     <!-- Main Footer Area -->
-    <div class="main-footer bg-img bg-overlay section-padding-80-0" style="background-image: url({% static 'img/bg-img/3.jpg' %});">
+    <div class="main-footer bg-img bg-overlay section-padding-80-0"
+      style="background-image: url({% static 'img/bg-img/3.jpg' %});">
       <div class="container">
         <div class="row">
 
@@ -126,7 +137,9 @@
           <div class="col-12 col-sm-6 col-lg-6">
             <div class="footer-widget mb-80">
               <!-- <a href="#" class="foo-logo d-block mb-30"><img src="{% static 'img/core-img/logo2.png' %}" alt=""></a> -->
-              <p>Petrosa Farms is dedicated to providing high-quality agricultural products through sustainable and innovative farming practices. We grow fresh, healthy, and responsibly farmed produce for communities across Nigeria.</p>
+              <p>Petrosa Farms is dedicated to providing high-quality agricultural products through sustainable and
+                innovative farming practices. We grow fresh, healthy, and responsibly farmed produce for communities
+                across Nigeria.</p>
               <div class="contact-info">
                 <p><i class="fa fa-map-pin" aria-hidden="true"></i><span>12 Raymond Rd, Lagos State</span></p>
                 <p><i class="fa fa-envelope" aria-hidden="true"></i><span>info.farm@gmail.com</span></p>
@@ -159,7 +172,7 @@
             </div>
           </div>
 
-        
+
           <!-- Single Footer Widget Area -->
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="footer-widget mb-80">
@@ -193,9 +206,11 @@
           <div class="row align-items-center">
             <div class="col-md-6">
               <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> &copy; Petrosa Farms. All Rights Reserved.<i class="fa fa-heart-o" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> &copy; Petrosa Farms. All Rights Reserved.<i
+                  class="fa fa-heart-o" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
             </div>
             <!-- <div class="col-md-6">
               <div class="footer-nav">
@@ -215,6 +230,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> &copy
         </div>
       </div>
     </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
   <!-- ##### Footer Area End ##### -->
 

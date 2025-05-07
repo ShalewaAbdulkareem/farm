@@ -1966,3 +1966,14 @@ li .accordion-body a *{
 .accordion-body h5, p{
   color: white;
 }
+
+
+.product-img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+  border-radius: 12px;
+}
+
+.product-img:hover {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
